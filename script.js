@@ -146,45 +146,56 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===========================
     // Counter Animation for Stats
     // ===========================
-    function animateCounter(element, target, duration = 2000) {
+    function animateCounter(element, target, suffix = '+') {
+        // Store original text to prevent re-animation
+        if (element.dataset.animated === 'true') return;
+        element.dataset.animated = 'true';
+        
         let start = 0;
+        const duration = 2000;
         const increment = target / (duration / 16); // 60fps
         
         const counter = setInterval(() => {
             start += increment;
             if (start >= target) {
-                element.textContent = formatNumber(target);
+                element.textContent = target + suffix;
                 clearInterval(counter);
             } else {
-                element.textContent = formatNumber(Math.floor(start));
+                element.textContent = Math.floor(start) + suffix;
             }
         }, 16);
-    }
-    
-    function formatNumber(num) {
-        if (num >= 1000) {
-            return (num / 1000).toFixed(0) + 'K+';
-        }
-        return num + '+';
     }
     
     // Trigger counter animation when stats section is in view
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const counters = entry.target.querySelectorAll('.text-3xl');
-                counters.forEach(counter => {
-                    const target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
-                    animateCounter(counter, target);
+                // Find all stat number elements
+                const statElements = document.querySelectorAll('.text-3xl.font-bold.text-emerald-600');
+                
+                statElements.forEach(element => {
+                    // Skip if already animated
+                    if (element.dataset.animated === 'true') return;
+                    
+                    const text = element.textContent;
+                    const target = parseInt(text.replace(/[^0-9]/g, ''));
+                    const suffix = text.includes('K') ? 'K+' : '+';
+                    
+                    if (!isNaN(target)) {
+                        animateCounter(element, target, suffix);
+                    }
                 });
+                
+                // Unobserve after animation starts
                 statsObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
     
-    const statsSection = document.querySelector('.grid.grid-cols-3.gap-6');
-    if (statsSection) {
-        statsObserver.observe(statsSection.parentElement);
+    // Observe the stats container
+    const statsContainer = document.querySelector('.grid.grid-cols-3.gap-6');
+    if (statsContainer) {
+        statsObserver.observe(statsContainer);
     }
 
     // ===========================
@@ -213,21 +224,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===========================
-    // Parallax Effect for Hero Section
+    // Parallax Effect for Hero Section - DISABLED
     // ===========================
-    const heroSection = document.querySelector('#home');
+    // Disabled to prevent layout issues with scroll animations
+    // const heroSection = document.querySelector('#home');
     
-    if (heroSection) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const parallaxElements = heroSection.querySelectorAll('[data-aos]');
-            
-            parallaxElements.forEach(element => {
-                const speed = 0.5;
-                element.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        });
-    }
+    // if (heroSection) {
+    //     window.addEventListener('scroll', function() {
+    //         const scrolled = window.pageYOffset;
+    //         const parallaxElements = heroSection.querySelectorAll('[data-aos]');
+    //         
+    //         parallaxElements.forEach(element => {
+    //             const speed = 0.5;
+    //             element.style.transform = `translateY(${scrolled * speed}px)`;
+    //         });
+    //     });
+    // }
 
     // ===========================
     // Form Validation (for future contact forms)

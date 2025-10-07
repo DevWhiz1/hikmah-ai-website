@@ -336,6 +336,28 @@ button:focus {
     animation: float 6s ease-in-out infinite;
 }
 
+/* Prevent layout shift issues */
+#home {
+    position: relative;
+    will-change: auto;
+}
+
+#home [data-aos] {
+    will-change: transform, opacity;
+}
+
+/* Ensure stats remain visible */
+.text-3xl.font-bold.text-emerald-600 {
+    min-height: 2.25rem;
+    display: block;
+}
+
+/* Prevent gap between sections */
+section {
+    position: relative;
+    transform: translateZ(0);
+}
+
 /* Section Divider */
 .section-divider {
     height: 2px;
