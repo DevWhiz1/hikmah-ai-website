@@ -321,13 +321,81 @@ button:focus {
 
 @media (min-width: 1024px) {
     html {
-        font-size: 16px;
+        font-size: 14px; /* Reduced from 16px */
     }
 }
 
 @media (min-width: 1280px) {
     html {
-        font-size: 18px;
+        font-size: 15px; /* Reduced from 18px */
+    }
+}
+
+/* Desktop-specific size reductions */
+@media (min-width: 1024px) {
+    /* Reduce hero section sizes */
+    .hero-title {
+        font-size: 2.5rem !important; /* Reduced from 4xl/6xl */
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem !important; /* Reduced from lg/xl */
+    }
+    
+    /* Reduce section padding */
+    section {
+        padding-top: 3rem !important; /* Reduced from py-20 */
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Reduce feature card sizes */
+    .feature-card {
+        padding: 1.5rem !important; /* Reduced from p-8 */
+    }
+    
+    /* Reduce button sizes */
+    .btn-primary {
+        padding: 0.75rem 1.5rem !important; /* Reduced from px-8 py-4 */
+        font-size: 0.875rem !important;
+    }
+    
+    /* Reduce image sizes */
+    .hero-image {
+        max-width: 400px !important;
+        height: auto !important;
+    }
+    
+    /* Reduce logo size */
+    .logo {
+        width: 2.5rem !important; /* Reduced from w-12 */
+        height: 2.5rem !important; /* Reduced from h-12 */
+    }
+    
+    /* Reduce navigation height */
+    nav {
+        height: 3.5rem !important; /* Reduced from h-16 */
+    }
+    
+    /* Reduce section headers */
+    .section-title {
+        font-size: 2rem !important; /* Reduced from 3xl/5xl */
+    }
+    
+    /* Reduce testimonial card padding */
+    .testimonial-card {
+        padding: 1.5rem !important; /* Reduced from p-8 */
+    }
+    
+    /* Reduce CTA section padding */
+    .cta-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Reduce footer padding */
+    footer {
+        padding-top: 2rem !important; /* Reduced from py-12 */
+        padding-bottom: 2rem !important;
     }
 }
 

@@ -76,13 +76,13 @@
 <body class="font-poppins bg-gray-50 text-gray-800">
     
     <!-- Navigation -->
-    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm mb-4">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-16 lg:h-14">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <img src="assets/logo.png" alt="Hikma AI Logo" class="w-12 h-12 object-contain">
-                    <span class="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-800 bg-clip-text text-transparent">Hikmah AI</span>
+                    <img src="assets/logo.png" alt="Hikma AI Logo" class="w-12 h-12 lg:w-10 lg:h-10 object-contain logo">
+                    <span class="text-2xl lg:text-xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-800 bg-clip-text text-transparent">Hikmah AI</span>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -120,14 +120,14 @@
     </nav>
     
     <!-- Hero Section -->
-    <section id="home" class="pt-24 pb-20 md:pt-32 md:pb-32 bg-gradient-to-br from-emerald-50 via-white to-gold-50 relative overflow-hidden">
+    <section id="home" class="pt-24 pb-20 md:pt-32 md:pb-32 lg:pt-20 lg:pb-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-50 relative overflow-hidden">
         <!-- Islamic Pattern Background -->
         <div class="absolute inset-0 opacity-5">
             <div class="islamic-pattern"></div>
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="mt-14 grid md:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div data-aos="fade-right" data-aos-duration="1000">
                     <div class="inline-block mb-4">
@@ -135,12 +135,12 @@
                             ✨ AI-Powered Islamic Learning
                         </span>
                     </div>
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h1 class="text-4xl md:text-6xl lg:text-4xl xl:text-5xl font-bold mb-6 leading-tight hero-title">
                         <span class="bg-gradient-to-r from-emerald-600 to-emerald-800 bg-clip-text text-transparent">Hikmah AI</span>
                         <br>
                         <span class="text-gray-800">Your Intelligent Islamic Companion</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                    <p class="text-lg md:text-xl lg:text-lg xl:text-xl text-gray-600 mb-8 leading-relaxed hero-subtitle">
                         Seek knowledge, guidance, and Quranic wisdom through AI-powered Islamic scholars. Access authentic Hadiths, find certified tutors, and get real-time prayer utilities — all in one platform.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
@@ -173,7 +173,7 @@
                 <!-- Right Image/Illustration -->
                 <div data-aos="fade-left" data-aos-duration="1000" class="relative">
                     <div class="relative z-10">
-                        <img src="assets/hero-illustration.svg" alt="Islamic AI Platform" class="w-full h-auto drop-shadow-2xl">
+                        <img src="assets/hero-illustration.svg" alt="Islamic AI Platform" class="w-full h-auto drop-shadow-2xl hero-image">
                     </div>
                     <!-- Decorative Elements -->
                     <div class="absolute top-10 right-10 w-32 h-32 bg-gold-400 rounded-full opacity-20 blur-3xl animate-pulse"></div>
@@ -184,12 +184,12 @@
     </section>
     
     <!-- Core Features Section -->
-    <section id="features" class="py-20 bg-white">
+    <section id="features" class="py-20 lg:py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <span class="text-emerald-600 font-semibold text-sm uppercase tracking-wide">Core Features</span>
-                <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Everything You Need for Islamic Learning</h2>
+                <h2 class="text-3xl md:text-5xl lg:text-3xl xl:text-4xl font-bold mt-3 mb-4 section-title">Everything You Need for Islamic Learning</h2>
                 <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                     A comprehensive platform combining AI technology with authentic Islamic knowledge
                 </p>
@@ -198,7 +198,7 @@
             <!-- Features Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1: AI Scholar -->
-                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 lg:p-6 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-brain text-white text-2xl"></i>
                     </div>
@@ -209,8 +209,8 @@
                 </div>
                 
                 <!-- Feature 2: Hadith Finder -->
-                <div class="group feature-card bg-gradient-to-br from-gold-50 to-white p-8 rounded-2xl border border-gold-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 lg:p-6 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-book text-white text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-gray-800">AI Hadith Finder</h3>
@@ -220,7 +220,7 @@
                 </div>
                 
                 <!-- Feature 3: Prayer Times -->
-                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 lg:p-6 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-mosque text-white text-2xl"></i>
                     </div>
@@ -231,8 +231,8 @@
                 </div>
                 
                 <!-- Feature 4: Quran Tutor -->
-                <div class="group feature-card bg-gradient-to-br from-gold-50 to-white p-8 rounded-2xl border border-gold-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 lg:p-6 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-gray-800">Quran Tutor Marketplace</h3>
@@ -242,7 +242,7 @@
                 </div>
                 
                 <!-- Feature 5: Scholar Consultation -->
-                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 lg:p-6 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
                     <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-phone-alt text-white text-2xl"></i>
                     </div>
@@ -253,8 +253,8 @@
                 </div>
                 
                 <!-- Feature 6: Tasbih Counter -->
-                <div class="group feature-card bg-gradient-to-br from-gold-50 to-white p-8 rounded-2xl border border-gold-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div class="group feature-card bg-gradient-to-br from-emerald-50 to-white p-8 lg:p-6 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-hand-holding-heart text-white text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-gray-800">Dhikr Counter</h3>
@@ -267,7 +267,7 @@
     </section>
     
     <!-- How It Works Section -->
-    <section id="how-it-works" class="py-20 bg-gradient-to-br from-emerald-50 to-white relative overflow-hidden">
+    <section id="how-it-works" class="py-20 lg:py-12 bg-gradient-to-br from-emerald-50 to-white relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-5">
             <div class="islamic-pattern"></div>
@@ -277,7 +277,7 @@
             <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <span class="text-emerald-600 font-semibold text-sm uppercase tracking-wide">Simple Process</span>
-                <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">How It Works</h2>
+                <h2 class="text-3xl md:text-5xl lg:text-3xl xl:text-4xl font-bold mt-3 mb-4 section-title">How It Works</h2>
                 <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                     Get started with Hikma AI in three simple steps
                 </p>
@@ -291,7 +291,7 @@
                         <div class="w-24 h-24 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center shadow-lg">
                             <i class="fas fa-user-plus text-white text-3xl"></i>
                         </div>
-                        <div class="absolute -top-2 -right-2 w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md">
+                        <div class="absolute -top-2 -right-2 w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md">
                             1
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                         <div class="w-24 h-24 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center shadow-lg">
                             <i class="fas fa-comment-dots text-white text-3xl"></i>
                         </div>
-                        <div class="absolute -top-2 -right-2 w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md">
+                        <div class="absolute -top-2 -right-2 w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md">
                             2
                         </div>
                     </div>
@@ -323,7 +323,7 @@
                         <div class="w-24 h-24 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center shadow-lg">
                             <i class="fas fa-check-circle text-white text-3xl"></i>
                         </div>
-                        <div class="absolute -top-2 -right-2 w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md">
+                        <div class="absolute -top-2 -right-2 w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md">
                             3
                         </div>
                     </div>
@@ -337,12 +337,12 @@
     </section>
     
     <!-- For Students & Tutors Section -->
-    <section id="tutors" class="py-20 bg-white">
+    <section id="tutors" class="py-20 lg:py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <span class="text-emerald-600 font-semibold text-sm uppercase tracking-wide">Join Our Community</span>
-                <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">For Students & Tutors</h2>
+                <h2 class="text-3xl md:text-5xl lg:text-3xl xl:text-4xl font-bold mt-3 mb-4 section-title">For Students & Tutors</h2>
                 <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                     Whether you're learning or teaching, Hikma AI has something for everyone
                 </p>
@@ -351,7 +351,7 @@
             <!-- Cards -->
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- For Students Card -->
-                <div class="group bg-gradient-to-br from-emerald-600 to-emerald-800 p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105" data-aos="fade-right" data-aos-delay="100">
+                <div class="group bg-gradient-to-br from-emerald-600 to-emerald-800 p-10 lg:p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105" data-aos="fade-right" data-aos-delay="100">
                     <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-6">
                         <i class="fas fa-graduation-cap text-white text-3xl"></i>
                     </div>
@@ -361,30 +361,30 @@
                     </p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-gold-400 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Certified & Verified Tutors
                         </li>
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-gold-400 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Flexible Scheduling
                         </li>
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-gold-400 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Personalized Learning Plans
                         </li>
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-gold-400 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Progress Tracking
                         </li>
                     </ul>
-                    <a href="https://hikma-ai.vercel.app/" class="inline-block px-8 py-4 bg-white text-emerald-700 rounded-full font-semibold hover:bg-gold-50 transition-all shadow-lg">
+                    <a href="https://hikma-ai.vercel.app/" class="inline-block px-8 py-4 bg-white text-emerald-700 rounded-full font-semibold hover:bg-emerald-50 transition-all shadow-lg">
                         Find a Tutor
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
                 
                 <!-- For Tutors Card -->
-                <div class="group bg-gradient-to-br from-gold-500 to-gold-600 p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105" data-aos="fade-left" data-aos-delay="200">
+                <div class="group bg-gradient-to-br from-emerald-600 to-emerald-800 p-10 lg:p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105" data-aos="fade-left" data-aos-delay="200">
                     <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-6">
                         <i class="fas fa-user-tie text-white text-3xl"></i>
                     </div>
@@ -394,23 +394,23 @@
                     </p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Teach from Anywhere
                         </li>
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Set Your Own Rates
                         </li>
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Global Student Base
                         </li>
                         <li class="flex items-center text-white">
-                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <i class="fas fa-check-circle text-emerald-300 mr-3"></i>
                             Secure Payment System
                         </li>
                     </ul>
-                    <a href="https://hikma-ai.vercel.app/" class="inline-block px-8 py-4 bg-white text-gold-700 rounded-full font-semibold hover:bg-emerald-50 transition-all shadow-lg">
+                    <a href="https://hikma-ai.vercel.app/" class="inline-block px-8 py-4 bg-white text-emerald-700 rounded-full font-semibold hover:bg-emerald-50 transition-all shadow-lg">
                         Become a Tutor
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -420,12 +420,12 @@
     </section>
     
     <!-- Testimonials Section -->
-    <section class="py-20 bg-gradient-to-br from-gray-50 to-emerald-50">
+    <section class="py-20 lg:py-12 bg-gradient-to-br from-gray-50 to-emerald-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <span class="text-emerald-600 font-semibold text-sm uppercase tracking-wide">Testimonials</span>
-                <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">What Our Users Say</h2>
+                <h2 class="text-3xl md:text-5xl lg:text-3xl xl:text-4xl font-bold mt-3 mb-4 section-title">What Our Users Say</h2>
                 <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                     Join thousands of satisfied users who are enriching their Islamic knowledge
                 </p>
@@ -434,9 +434,9 @@
             <!-- Testimonial Cards -->
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white p-8 lg:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all testimonial-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center mb-4">
-                        <div class="flex text-gold-500">
+                        <div class="flex text-emerald-500">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -459,9 +459,9 @@
                 </div>
                 
                 <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white p-8 lg:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all testimonial-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center mb-4">
-                        <div class="flex text-gold-500">
+                        <div class="flex text-emerald-500">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -484,9 +484,9 @@
                 </div>
                 
                 <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-white p-8 lg:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all testimonial-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center mb-4">
-                        <div class="flex text-gold-500">
+                        <div class="flex text-emerald-500">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -512,7 +512,7 @@
     </section>
     
     <!-- CTA Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-emerald-600 to-emerald-800 relative overflow-hidden">
+    <section id="contact" class="py-20 lg:py-12 bg-gradient-to-br from-emerald-600 to-emerald-800 relative overflow-hidden cta-section">
         <!-- Islamic Pattern Background -->
         <div class="absolute inset-0 opacity-10">
             <div class="islamic-pattern-light"></div>
@@ -525,18 +525,18 @@
                         <i class="fas fa-star-and-crescent text-white text-4xl"></i>
                     </div>
                 </div>
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                <h2 class="text-3xl md:text-5xl lg:text-3xl xl:text-4xl font-bold text-white mb-6 leading-tight section-title">
                     Join Hikma AI and Be Part of the Future of Islamic Learning
                 </h2>
                 <p class="text-emerald-50 text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
                     Start your journey of knowledge today. Access AI-powered Islamic guidance, connect with certified tutors, and strengthen your faith.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://hikma-ai.vercel.app/" class="group px-10 py-5 bg-white text-emerald-700 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all flex items-center justify-center">
+                    <a href="https://hikma-ai.vercel.app/" class="group px-10 py-5 lg:px-8 lg:py-4 bg-white text-emerald-700 rounded-full font-bold text-lg lg:text-base shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all flex items-center justify-center btn-primary">
                         Start for Free
                         <i class="fas fa-rocket ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </a>
-                    <a href="mailto:contact@hikma-ai.com" class="px-10 py-5 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center">
+                    <a href="mailto:contact@hikma-ai.com" class="px-10 py-5 lg:px-8 lg:py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg lg:text-base hover:bg-white/10 transition-all flex items-center justify-center">
                         Contact Us
                         <i class="fas fa-envelope ml-2"></i>
                     </a>
@@ -562,13 +562,13 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
+    <footer class="bg-gray-900 text-gray-300 py-12 lg:py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <!-- Logo & Tagline -->
                 <div class="md:col-span-2">
                     <div class="flex items-center space-x-3 mb-4">
-                        <img src="assets/logo.png" alt="Hikma AI Logo" class="w-12 h-12 object-contain">
+                        <img src="assets/logo.png" alt="Hikma AI Logo" class="w-12 h-12 lg:w-10 lg:h-10 object-contain logo">
                         <span class="text-2xl font-bold font-amiri text-white">Hikma AI</span>
                     </div>
                     <p class="text-gray-400 leading-relaxed mb-4">
